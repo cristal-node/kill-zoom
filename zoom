@@ -1,0 +1,5 @@
+#!/bin/bash
+
+mkdir -p /tmp/zoom_xdg_dfjf
+export HOME=/tmp/zoom_xdg_dfjf
+/sandbox/zoom "$1"
