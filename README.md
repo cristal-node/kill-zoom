@@ -1,8 +1,13 @@
-**Defense mechanism from zoom**
+#**Defense mechanism from zoom**
 
-This firejail profile is from the default profile, so you should check updates from them.
-Use the other file the to pass xdg links(zoommtg://zoom.us/j/123456789) 
+This Firejail profile is modified from the default profile.
 
-It makes a disposable home folder in /tmp, thus it'll be deleted afterwards.
+###Usage:
+- Place this profile to ~/.config/firejail
+- Change the name in the zoom file
+- Run the zoom file to run zoom in sandbox or pass xdg links to the file
 
-BUT STILL YOU SHOULDN'T USE ZOOM, USE SOMETHING ELSE INSTEAD
+##zoom xdg link hack:
+    zoommtg://zoom.us/join?action=join&confno={MEETING_ID}&pwd={HASHED_PASSWORD_IF_EXIST}
+
+**BUT STILL YOU SHOULDN'T USE ZOOM, USE SOMETHING ELSE INSTEAD**

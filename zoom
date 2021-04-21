@@ -1,5 +1,9 @@
 #!/bin/bash
 
-mkdir -p /tmp/zoom_xdg_dfjf
-export HOME=/tmp/zoom_xdg_dfjf
-/sandbox/zoom "$1"
+user_name="user"
+
+if [[ -z "${1+set}" ]]; then
+    /usr/bin/firejail --rmenv=HOME --env=USER="$user_name" zoom
+else
+    /usr/bin/firejail --rmenv=HOME --env=USER="$user_name" zoom "$1"
+fi
